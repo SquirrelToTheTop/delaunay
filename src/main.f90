@@ -2,7 +2,8 @@ PROGRAM main
 
     use utils
     use io
-    
+    use algorithm
+
     implicit none
 
     integer(kind=4) :: err
@@ -45,6 +46,13 @@ PROGRAM main
             write(*,'(a)') 'Failed !'
             stop 1
         endif
+
+        call write_2d_data(list_points2D, n_points2D)
+
+        write(*,*)
+        write(*,'(a,$)') "> Triangulation using sweep-line's algorithm..."
+        call delaunay(list_points2D, n_points2D)
+
 
     else
         write(*,*) ">> TODO : generate point in space cartesian space !"
