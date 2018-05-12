@@ -10,6 +10,11 @@ EXEC_TEST=Anas-test
 # directories
 WORK=$(shell pwd)
 SRC=$(WORK)/src/
+
+$(shell mkdir -p `pwd`/bin)
+$(shell mkdir -p `pwd`/obj)
+$(shell mkdir -p `pwd`/results)
+
 OBJ=$(WORK)/obj/
 BIN=$(WORK)/bin/
 RES=$(WORK)/results/
