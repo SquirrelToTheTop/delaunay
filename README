@@ -1,0 +1,9 @@
+Project initiated : 10 May 2019
+
+Main purpose : Implementation de la triangulation delaunay, for fun !
+
+secondary first purpose : generate 2D data points from pictures
+
+secondary second purpose : Implementation de la mise en place d'un diagramme Voronoi !
+
+tertiary purpose : Implementation d'une methode de clustering K-means according to Maitre Pierre Ikea
